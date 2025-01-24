@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./cart.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container1">
+            <div>
+                <h2 class="commerce"><a href="./homepage.html">Ecommerce</a></h2>
+            </div>
+            <div class="container2">
+                <h3><a href="./homepage.html">Home</a></h3>
+                <h3><a href="./products.html">Products</a></h3>
+                <h3><a href="./aboutus.html">About</a></h3>
+                <h3><a href="./contact.html">Contact</a></h3>
+            </div>
+            <div>
+                <i class="fw-semibold fa-solid fa-arrow-right-to-bracket login">
+                    <a class="i2" href="./login.html"> Login</a>
+                </i>
+                <i class="fa-solid fa-user-plus register">
+                    <i class="i2"><a class="i2" href="./regester.html"> Register</a></i>
+                </i>
+                <!-- Cart icon with dynamic count -->
+                <i id="cartt" class="fa-sharp fa-solid fa-cart-shopping cart">
+                    <span class="cart-count"> Cart(0)</span>
+                </i>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Cart Page Title -->
+    <h1 class="ccart">Cart</h1>
+
+    <!-- Horizontal Line -->
+    <div class="line">
+        <hr>
+    </div>
+
+    <!-- Cart Container -->
+    <div class="container3">
+        <!-- Initially empty cart message -->
+        <h1 class="empty">Your Cart is Empty</h1>
+        <br>
+        <!-- Continue Shopping Button -->
+        <button class="button" id="cbtn">
+            <i class="fa-solid fa-arrow-left left"></i> 
+            <a id="cbtn-link" href="./homepage.html">Continue Shopping</a>
+        </button>
+        <br><br><br><br><br>
+    </div><br>
+    
+    <!-- Footer -->
+    <footer class="end">
+        <span>Made with <i class="fa-solid fa-heart heart"></i> by <u>SARAKAM SRINU</u></span>
+    </footer>
+    
+    <br><br>
+    
+    <!-- Cart items and total area (initially hidden) -->
+    <div id="cart-container" style="display: none;">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div id="cart-total"></div>
+    </div>
+
+    <!-- Link to the JavaScript file managing the cart -->
+    <script src="./cart.js"></script>
+</body>
+</html>

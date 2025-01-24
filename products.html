@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tech shop home page</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="./productstyles.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+    <h2 class="ecommerce">Ecommerce</h2>
+    <h3 id="home"><a class="orange" href="./homepage.html">Home</a></h3>
+    <h3 id="product">Products</h3>
+    <h3 id="about"><a class="yellow" href="./aboutus.html">About</a></h3>
+    <h3 class="contact"><a class="black" href="./contact.html">Contact</a></h3>
+    <button class="login">Login</button>
+    <i class="bi bi-box-arrow-in-right arrows"></i>
+    <button class="regester">Regester</button>
+    <i class="bi bi-person-plus-fill persons"></i>
+    <button class="cart">Cart (0)</button>
+    <i class="bi bi-cart3 carts"></i>
+    <div>
+     <br><br><br>
+     <h2 class="latest">Latest Products</h2>
+     <br>
+     <hr class="horizontal">
+     <div class="mottam">
+     <button onclick="filteritems('all')" class="all">All</button>
+     <button onclick="filteritems('men-s-clothing')" class="men">Men'sClothing</button>
+     <button onclick="filteritems('women-s-clothing')" class="wmen">Women'sClothing</button>
+     <button onclick="filteritems('jewelery')" class="jewel">Jewelery</button>
+     <button onclick="filteritems('electronics')" class="elect">Electronics</button>
+    </div>
+     <div id="container"></div>
+     <footer class="made">Made with <i class="bi bi-heart-fill heart"></i> by SARAKAM SRINU</footer>
+</div>
+    <script src="./product.js"></script>
+</div>
+</body>
+</html>
